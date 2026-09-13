@@ -73,14 +73,17 @@ export default function Impressum() {
           </div>
         </div>
 
-        {/* Gewerbeanmeldung & Aufsicht */}
+        {/* Gewerbeanmeldung & Steuern */}
         <div>
           <h2 className="text-xl font-bold text-slate-900 mb-3 flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-blue-600"></span>
-            Gewerbeanmeldung &amp; Aufsichtsbehörde
+            Gewerbeanmeldung &amp; Umsatzsteuer
           </h2>
-          <div className="text-slate-700 text-sm sm:text-base leading-relaxed pl-4 border-l-2 border-slate-200">
+          <div className="text-slate-700 text-sm sm:text-base leading-relaxed pl-4 border-l-2 border-slate-200 space-y-1">
             <p>Gewerbeanmeldung nach § 14 GewO erteilt durch die Stadt Essen.</p>
+            <p className="text-slate-500 text-xs">
+              Umsatzsteuer: Gemäß § 19 UStG wird keine Umsatzsteuer berechnet (Kleinunternehmerstatus) bzw. Zuteilung der USt-IdNr. erfolgt durch das Finanzamt Essen.
+            </p>
           </div>
         </div>
 
