@@ -7,14 +7,78 @@ import { ConsentProvider } from '../context/ConsentContext';
 import { MapPin, Phone, Mail, Clock, ExternalLink } from 'lucide-react';
 
 export const metadata = {
-  title: 'Rü-Phone Store Essen | Smartphone- & Tablet-Reparatur auf der Rü',
+  metadataBase: new URL('https://eduard-website-de.vercel.app'),
+  title: {
+    default: 'Rü-Phone Store Essen | Smartphone- & Tablet-Reparatur auf der Rü',
+    template: '%s | Rü-Phone Store Essen',
+  },
   description: 'Professioneller Reparaturdienst für Smartphones & Tablets in Essen-Rüttenscheid. Rüttenscheider Str. 102, 45130 Essen. Express Vor-Ort-Service und Top Google-Bewertungen.',
+  keywords: ['Handyreparatur Essen', 'iPhone Reparatur Rüttenscheid', 'Samsung Display Reparatur', 'Akkuwechsel Essen', 'Rü-Phone Store', 'Smartphone Werkstatt'],
+  openGraph: {
+    title: 'Rü-Phone Store Essen | Smartphone- & Tablet-Reparatur auf der Rü',
+    description: 'Express-Reparaturen für iPhone, Samsung und mehr auf der Rüttenscheider Str. 102, Essen.',
+    url: 'https://eduard-website-de.vercel.app',
+    siteName: 'Rü-Phone Store',
+    locale: 'de_DE',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  additionalType: 'https://schema.org/ElectronicsRepairShop',
+  name: 'Rü-Phone Store Essen',
+  image: 'https://eduard-website-de.vercel.app/store-hero.jpg',
+  '@id': 'https://eduard-website-de.vercel.app',
+  url: 'https://eduard-website-de.vercel.app',
+  telephone: '+4920127107126',
+  priceRange: '€€',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Rüttenscheider Str. 102',
+    addressLocality: 'Essen',
+    postalCode: '45130',
+    addressRegion: 'Nordrhein-Westfalen',
+    addressCountry: 'DE',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 51.4363,
+    longitude: 7.0062,
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '10:00',
+      closes: '18:30',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: 'Saturday',
+      opens: '10:00',
+      closes: '16:00',
+    },
+  ],
+  sameAs: [
+    'https://www.instagram.com/rue_phone_store/',
+    'https://www.facebook.com/ruephonestore',
+  ],
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="de">
       <body className="bg-slate-50 text-slate-900 font-sans flex flex-col min-h-screen">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <ConsentProvider>
           {/* Responsive Header Navigation */}
           <Navbar />

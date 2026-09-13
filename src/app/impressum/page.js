@@ -79,11 +79,8 @@ export default function Impressum() {
             <span className="w-2 h-2 rounded-full bg-blue-600"></span>
             Gewerbeanmeldung &amp; Aufsichtsbehörde
           </h2>
-          <div className="text-slate-700 text-sm sm:text-base leading-relaxed pl-4 border-l-2 border-slate-200 space-y-1">
+          <div className="text-slate-700 text-sm sm:text-base leading-relaxed pl-4 border-l-2 border-slate-200">
             <p>Gewerbeanmeldung nach § 14 GewO erteilt durch die Stadt Essen.</p>
-            <p className="text-slate-500 text-xs">
-              Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: Vor Ort einsehbar bzw. in Beantragung.
-            </p>
           </div>
         </div>
 
