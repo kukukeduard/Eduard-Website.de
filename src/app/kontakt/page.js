@@ -1,11 +1,10 @@
 "use client";
 
 import MultiStepForm from '../../components/MultiStepForm';
-import { useConsent } from '../../context/ConsentContext';
+import GoogleMap from '../../components/GoogleMap';
 import { MapPin, Phone, Mail, Clock, ExternalLink, Navigation } from 'lucide-react';
 
 export default function Kontakt() {
-  const { consentGiven, acceptConsent } = useConsent();
 
   return (
     <div className="space-y-12">
@@ -139,58 +138,8 @@ export default function Kontakt() {
           </a>
         </div>
 
-        {/* Interactive Google Maps iframe with conditional loading based on consentGiven */}
-        <div className="relative w-full h-[300px] sm:h-[450px] rounded-2xl overflow-hidden border border-slate-200 shadow-inner bg-slate-100 flex items-center justify-center">
-          {consentGiven ? (
-            <iframe
-              title="Rü-Phone Store Essen Standort Google Maps"
-              src="https://maps.google.com/maps?q=R%C3%BC-Phone+Store,+R%C3%BCttenscheider+Str.+102,+45130+Essen&t=&z=16&ie=UTF8&iwloc=&output=embed"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="relative z-10 w-full h-full"
-            />
-          ) : (
-            <div className="relative z-10 w-full h-full flex flex-col items-center justify-center p-6 text-center bg-slate-50 text-slate-700 space-y-4">
-              <div className="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center shadow-sm">
-                <MapPin size={24} />
-              </div>
-              <div className="max-w-md space-y-1">
-                <div className="flex items-center justify-center gap-1.5 text-slate-900 font-bold text-base">
-                  <span>Google Maps deaktiviert</span>
-                  <span className="text-[10px] font-semibold uppercase px-2 py-0.5 rounded-full bg-slate-200 text-slate-700">
-                    DSGVO
-                  </span>
-                </div>
-                <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                  Um die interaktive Karte von Google Maps anzuzeigen, ist Ihre Einwilligung gemäß DSGVO / Cookie-Richtlinie erforderlich. Dabei werden Daten an Google-Server übertragen.
-                </p>
-              </div>
-              <div className="flex flex-col sm:flex-row gap-3 items-center">
-                <button
-                  type="button"
-                  onClick={acceptConsent}
-                  className="inline-flex items-center gap-1.5 bg-blue-700 hover:bg-blue-800 text-white px-4 py-2.5 rounded-xl font-semibold text-xs shadow-sm hover:-translate-y-0.5 hover:shadow-md transition-all cursor-pointer"
-                >
-                  <Navigation size={14} />
-                  Google Maps aktivieren &amp; zustimmen
-                </button>
-                <a
-                  href="https://www.google.com/maps/dir/?api=1&destination=R%C3%BC-Phone+Store+R%C3%BCttenscheider+Str.+102+45130+Essen"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 bg-slate-200 hover:bg-slate-300 text-slate-800 px-4 py-2.5 rounded-xl font-semibold text-xs shadow-sm hover:-translate-y-0.5 hover:shadow-md transition-all"
-                >
-                  Standort extern öffnen
-                  <ExternalLink size={14} />
-                </a>
-              </div>
-            </div>
-          )}
-        </div>
+        {/* Interactive Google Maps with DSGVO 2-Click Consent Barrier */}
+        <GoogleMap heightClass="h-[320px] sm:h-[450px]" />
       </section>
     </div>
   );
