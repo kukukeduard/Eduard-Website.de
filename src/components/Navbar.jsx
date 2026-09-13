@@ -85,7 +85,7 @@ export default function Navbar() {
         {/* Mobile Actions: Direct Call & Menu Toggle */}
         <div className="flex md:hidden items-center gap-2">
           <a
-            href="tel:020127107126"
+            href="tel:+4920127107126"
             className="p-2 text-blue-700 hover:bg-blue-50 rounded-lg transition-colors flex items-center gap-1.5 text-xs font-semibold border border-blue-100"
             aria-label="Rü-Phone Store anrufen"
           >
@@ -144,7 +144,7 @@ export default function Navbar() {
             <span className="flex items-center gap-1">
               <MapPin size={13} className="text-blue-600" /> Rü 102, 45130 Essen
             </span>
-            <a href="tel:020127107126" className="text-blue-700 font-semibold hover:underline">
+            <a href="tel:+4920127107126" className="text-blue-700 font-semibold hover:underline">
               0201 27107126
             </a>
           </div>

@@ -58,13 +58,13 @@ export default function Kontakt() {
                 <h3 className="font-bold text-slate-900">Telefon &amp; Direktservice</h3>
                 <p className="text-sm text-slate-600">
                   Festnetz:{' '}
-                  <a href="tel:020127107126" className="text-blue-700 hover:underline font-semibold">
+                  <a href="tel:+4920127107126" className="text-blue-700 hover:underline font-semibold">
                     0201 27107126
                   </a>
                 </p>
                 <p className="text-sm text-slate-600">
                   Mobil / WhatsApp:{' '}
-                  <a href="tel:015773473292" className="text-blue-700 hover:underline font-semibold">
+                  <a href="tel:+4915773473292" className="text-blue-700 hover:underline font-semibold">
                     01577 3473292
                   </a>
                 </p>

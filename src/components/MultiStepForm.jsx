@@ -481,7 +481,7 @@ export default function MultiStepForm() {
                 </button>
                 <span className="hidden sm:inline text-slate-300">•</span>
                 <a
-                  href="tel:020127107126"
+                  href="tel:+4920127107126"
                   className="text-xs text-slate-600 hover:text-blue-700 font-medium"
                 >
                   Direkter Rückruf: <span className="font-semibold text-blue-700">0201 27107126</span>

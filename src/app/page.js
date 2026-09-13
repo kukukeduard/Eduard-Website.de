@@ -67,7 +67,7 @@ export default function Home() {
             </Link>
             <div className="flex flex-wrap items-center justify-center gap-2.5 text-sm text-slate-200 pt-1">
               <a
-                href="tel:020127107126"
+                href="tel:+4920127107126"
                 aria-label="0201 27107126 – Direkt im Store anrufen"
                 className="inline-flex items-center justify-center gap-2 bg-black/40 hover:bg-black/60 text-white border border-white/20 backdrop-blur-sm px-4 py-2.5 min-h-[42px] rounded-xl transition-all duration-200 font-medium hover:-translate-y-0.5 shadow-sm text-xs sm:text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-white/80"
               >
@@ -203,7 +203,7 @@ export default function Home() {
 
           {/* 4. Sofort telefonisch beraten lassen */}
           <a
-            href="tel:020127107126"
+            href="tel:+4920127107126"
             aria-label="Sofort telefonisch beraten lassen – Anruf unter 0201 27107126 ohne Warteschleife"
             className="group bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:-translate-y-1.5 hover:shadow-xl hover:border-amber-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 focus-visible:ring-offset-2 transition-all duration-300 ease-out flex flex-col justify-between"
           >
@@ -337,7 +337,7 @@ export default function Home() {
               Anfahrt & Kontakt
             </Link>
             <a
-              href="tel:020127107126"
+              href="tel:+4920127107126"
               className="bg-blue-800 hover:bg-blue-700 text-white border border-blue-600 font-bold px-6 py-3.5 rounded-xl text-center flex items-center justify-center gap-2 hover:-translate-y-1.5 hover:shadow-lg transition-all duration-300 ease-out"
             >
               <Phone size={16} />

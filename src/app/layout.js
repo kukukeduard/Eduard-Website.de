@@ -52,6 +52,8 @@ export default function RootLayout({ children }) {
                   <li><Link href="/reparaturen" className="hover:text-white transition-colors">Reparaturen & Preise</Link></li>
                   <li><Link href="/angebote" className="hover:text-white transition-colors">Angebote & Ankauf</Link></li>
                   <li><Link href="/kontakt" className="hover:text-white transition-colors">Kontakt & Google Maps</Link></li>
+                  <li><Link href="/impressum" className="hover:text-white transition-colors">Impressum (§ 5 DDG)</Link></li>
+                  <li><Link href="/datenschutz" className="hover:text-white transition-colors">Datenschutz (DSGVO)</Link></li>
                 </ul>
               </div>
 
@@ -92,11 +94,11 @@ export default function RootLayout({ children }) {
                 <div className="space-y-1.5 text-xs text-slate-400">
                   <p className="flex items-center gap-1.5">
                     <Phone size={12} className="text-blue-400 shrink-0" />
-                    <span>Tel: <a href="tel:020127107126" className="text-blue-400 hover:underline font-medium">0201 27107126</a></span>
+                    <span>Tel: <a href="tel:+4920127107126" className="text-blue-400 hover:underline font-medium">0201 27107126</a></span>
                   </p>
                   <p className="flex items-center gap-1.5">
                     <Phone size={12} className="text-blue-400 shrink-0" />
-                    <span>Mobil: <a href="tel:015773473292" className="text-blue-400 hover:underline font-medium">01577 3473292</a></span>
+                    <span>Mobil: <a href="tel:+4915773473292" className="text-blue-400 hover:underline font-medium">01577 3473292</a></span>
                   </p>
                   <p className="flex items-center gap-1.5">
                     <Mail size={12} className="text-blue-400 shrink-0" />
@@ -123,6 +125,14 @@ export default function RootLayout({ children }) {
             <div className="pt-8 mt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
               <p>© 2026 Rü-Phone Store – Alle Rechte vorbehalten.</p>
               <div className="flex flex-wrap items-center gap-4">
+                <Link href="/impressum" className="hover:text-white transition-colors">
+                  Impressum
+                </Link>
+                <span>•</span>
+                <Link href="/datenschutz" className="hover:text-white transition-colors">
+                  Datenschutz
+                </Link>
+                <span>•</span>
                 <CookieSettingsButton />
                 <span>•</span>
                 <a href="https://www.instagram.com/rue_phone_store/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">

@@ -130,7 +130,7 @@ export default function Reparaturen() {
           Die Ersatzteilpreise für Smartphones variieren je nach Modellreihe, Display-Technologie (z.B. OLED vs. LCD) und Marktverfügbarkeit. 
           Deshalb erhalten Sie im Rü-Phone Store vor Beginn der Reparatur stets eine <strong>kostenlose und verbindliche Einschätzung direkt vor Ort</strong>. 
           Rufen Sie uns gerne an unter{' '}
-          <a href="tel:020127107126" className="text-blue-700 font-semibold hover:underline">
+          <a href="tel:+4920127107126" className="text-blue-700 font-semibold hover:underline">
             0201 27107126
           </a>{' '}
           oder kommen Sie einfach auf der Rüttenscheider Str. 102 vorbei.
@@ -162,7 +162,7 @@ export default function Reparaturen() {
             Reparatur online anfragen <ArrowRight size={16} />
           </Link>
           <a
-            href="tel:020127107126"
+            href="tel:+4920127107126"
             className="bg-slate-100 hover:bg-slate-200 text-slate-900 px-6 py-3 rounded-xl font-semibold flex items-center gap-2 hover:-translate-y-1.5 hover:shadow-lg transition-all duration-300 ease-out"
           >
             <Phone size={16} /> 0201 27107126
